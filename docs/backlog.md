@@ -1,3 +1,1 @@
-# Backlog
-
-Lista de tarefas e prioridades.
+/dev/null

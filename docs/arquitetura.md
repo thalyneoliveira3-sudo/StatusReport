@@ -1,3 +1,1 @@
-# Arquitetura
-
-Descrição da arquitetura do projeto.
+/dev/null

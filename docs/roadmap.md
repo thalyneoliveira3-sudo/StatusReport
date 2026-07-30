@@ -1,3 +1,1 @@
-# Roadmap
-
-Planejamento e roadmap do projeto.
+/dev/null

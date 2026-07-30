@@ -1,3 +1,1 @@
-# Padrões
-
-Padrões de código e contribuição.
+/dev/null
