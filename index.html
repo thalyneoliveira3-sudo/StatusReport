@@ -1,1 +1,64 @@
-/dev/null
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>StatusReport</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="hero">
+    <div class="logo">Logo</div>
+    <div>
+      <h1 id="projectTitle">StatusReport</h1>
+      <div id="statusDate">Status</div>
+    </div>
+    <div style="text-align:right">
+      <input id="excelFile" type="file" accept=".xlsx,.xls">
+      <input id="logoFile" type="file" accept="image/*">
+      <button class="btn primary" onclick="render()">Render</button>
+    </div>
+  </header>
+
+  <nav class="nav">
+    <div class="toolbar">
+      <a href="#">Resumo</a>
+      <a href="#waves">Ondas</a>
+      <a href="#migration">Migração</a>
+    </div>
+  </nav>
+
+  <main>
+    <section class="grid" id="kpis">
+      <!-- KPIs serão renderizados aqui -->
+    </section>
+
+    <section id="gpMessage"></section>
+
+    <section id="waves"></section>
+
+    <section id="migration"></section>
+
+    <section class="kanban" id="kanban"></section>
+
+    <section id="riskSummary"></section>
+    <section id="riskHeat"></section>
+    <section id="riskTable"></section>
+
+    <section id="timelineArea"></section>
+
+    <section id="insights"></section>
+
+    <canvas id="kpiChart" width="400" height="400"></canvas>
+
+    <div id="clientLogo" style="position:fixed;right:8px;bottom:8px;width:120px;height:120px"></div>
+  </main>
+
+  <!-- Libraries -->
+  <script src="libs/chart.js"></script>
+  <script src="libs/xlsx.full.min.js"></script>
+
+  <!-- App -->
+  <script src="js/script.js"></script>
+</body>
+</html>
